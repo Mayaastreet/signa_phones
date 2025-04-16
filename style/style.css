@@ -127,13 +127,14 @@ body {
 .promo-item {
     text-align: center;
     border: 1px solid var(--article-border-color);
-    padding: 1rem;
+    padding: 10px; 
     border-radius: 5px;
     background-color: white;
+    margin: 1rem; 
 }
 
 .promo-item img {
-    width: 100%;
+    width: 50%;
     height: auto;
     border-radius: 5px;
 }
@@ -157,7 +158,56 @@ body {
     border-radius: 5px;
 }
 
-/****** RESPONSIVE DESIGN ******/
+/***   VENTAS     ***/
+
+
+
+/* NUEVOS PRODUCTOS Y ACCESORIOS */
+.nuevos-productos, .accesorios {
+    margin-top: 2rem;
+}
+
+.nuevos-productos h2, .accesorios h2 {
+    text-align: center;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.nuevos-productos .grid, .accesorios .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.producto-item {
+    text-align: left; /* Alinear texto a la izquierda */
+    border: 2px solid var(--article-border-color);
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--background-color);
+    margin: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.producto-item img {
+    width: 100%; /* Imagen ocupa todo el ancho del contenedor */
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+.producto-item h3 {
+    color: var(--main-color);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.producto-item p {
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+/****** Configs pantallas ******/
 
 /* Para pantallas de tabletas */
 @media (max-width: 768px) {
