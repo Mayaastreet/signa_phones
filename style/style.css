@@ -41,7 +41,7 @@ body {
     padding: 1rem 2rem;
     background-color: var(--main-color);
     color: white;
-    flex-wrap: nowrap; /* Permite que los elementos se ajusten si no caben en una línea */
+    flex-wrap: nowrap;
 }
 
 /* Animación para el logo del header */
@@ -57,20 +57,20 @@ body {
     }
 }
 
-/* Asegúrate de que el logo del header sea solo una imagen y gire */
+
 .header .logo img {
-    display: inline-block; /* Asegura que sea tratado como una imagen */
+    display: inline-block;
     animation: rotateLogo 10s linear infinite;
-    animation-delay: 2s; /* Tiempo entre inicio y fin de la animación */
-    pointer-events: none; /* Evita que sea interactivo como un botón */
+    animation-delay: 2s;
+    pointer-events: none; 
 }
 
-/* Aplica la animación específicamente al logo signa_phones.png */
+
 .header .logo img[src="./img/logos/signa_phones.png"] {
-    display: inline-block; /* Asegura que sea tratado como una imagen */
+    display: inline-block; 
     animation: rotateLogo 10s linear infinite;
-    animation-delay: 2s; /* Tiempo entre inicio y fin de la animación */
-    pointer-events: none; /* Evita que sea interactivo */
+    animation-delay: 2s; 
+    pointer-events: none; 
 }
 
 .logo img {
@@ -79,51 +79,51 @@ body {
 
 .nav-list {
     display: flex;
-    gap: 1.5rem; /* Aumenta el espacio entre los elementos de la navegación */
+    gap: 1.5rem; 
     list-style: none;
     margin: 0;
     padding: 0;
-    flex-wrap: wrap; /* Asegura que los elementos no se desborden */
-    width: 100%; /* Asegura que ocupe todo el ancho disponible */
-    justify-content: flex-start; /* Alinea los elementos a la izquierda */
-    margin-left: 120px; /* Desplaza la navegación hacia la derecha */
+    flex-wrap: wrap; 
+    width: 100%; 
+    justify-content: flex-start; 
+    margin-left: 120px; 
 }
 
 .nav-list a {
     text-decoration: none;
     color: white;
     font-weight: 500;
-    white-space: nowrap; /* Evita que los enlaces se dividan en varias líneas */
+    white-space: nowrap;
 }
 
 .nav-list a:not(:last-child)::before {
-    content: none; /* Asegura que no haya íconos en otros enlaces */
+    content: none; 
 }
 
 .nav-list a:not(:last-child) {
-    border-left: none; /* Elimina cualquier borde en otros enlaces */
+    border-left: none; 
 }
 
 .nav-list a:hover {
     color: var(--hover-color);
 }
 
-/* Estilo específico para el enlace "Iniciar sesión" */
+
 .header .login-link {
-    margin-left: auto; /* Empuja el enlace hacia la derecha */
+    margin-left: auto; 
     display: flex;
     align-items: center;
-    gap: 0.5rem; /* Espacio entre el ícono y el texto */
-    padding-left: 1rem; /* Espacio adicional para separarlo visualmente */
-    border-left: 1px solid white; /* Línea divisoria */
+    gap: 0.5rem; 
+    padding-left: 1rem; 
+    border-left: 1px solid white; 
     color: white;
     text-decoration: none;
     font-weight: 500;
-    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    white-space: nowrap; 
 }
 
 .header .login-link::before {
-    content: "🔒"; /* Ícono de candado */
+    content: "🔒"; 
     font-size: 1rem;
 }
 
@@ -135,17 +135,17 @@ body {
 .footer {
     background-color: var(--secondary-color);
     color: white;
-    padding: 1rem; /* Reduce el padding para evitar separación adicional */
-    text-align: left; /* Alinea los textos del footer a la izquierda */
+    padding: 1rem; 
+    text-align: left;
     margin-top: auto;
 }
 
 .footer .nav-list {
-    justify-content: flex-start; /* Alinea los enlaces del footer a la izquierda */
-    gap: 0.5rem; /* Reduce el espacio entre los enlaces */
-    padding-left: 0; /* Elimina cualquier padding adicional */
-    margin-left: 0; /* Elimina cualquier margen adicional */
-    list-style: none; /* Asegura que no haya viñetas en la lista */
+    justify-content: flex-start; 
+    gap: 0.5rem; 
+    padding-left: 0; 
+    margin-left: 0;
+    list-style: none;
 }
 
 /* Animación para el logo del footer */
@@ -163,7 +163,7 @@ body {
 
 .footer .logo img {
     animation: rotateLogo 10s linear infinite;
-    animation-delay: 2s; /* Tiempo entre inicio y fin de la animación */
+    animation-delay: 2s; 
 }
 
 /****** COMPONENTES ******/
@@ -278,7 +278,7 @@ body {
 }
 
 .producto-item {
-    text-align: left; /* Alinear texto a la izquierda */
+    text-align: left; 
     border: 2px solid var(--article-border-color);
     padding: 1rem;
     border-radius: 10px;
@@ -288,7 +288,7 @@ body {
 }
 
 .producto-item img {
-    width: 100%; /* Imagen ocupa todo el ancho del contenedor */
+    width: 100%; 
     height: auto;
     border-radius: 5px;
     margin-bottom: 0.5rem;
@@ -470,7 +470,7 @@ body {
 
 /* REGISTER */
 .register-container {
-    background-color: #E0AAFF; /* Fondo similar al formulario de inicio de sesión */
+    background-color: #E0AAFF; 
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -479,36 +479,36 @@ body {
 }
 
 .register-container h1 {
-    color: #3C096C; /* Color del título */
+    color: #3C096C; 
     font-size: 1.8rem;
     text-align: center;
     margin-bottom: 1.5rem;
 }
 
 .register-container .form-label {
-    color: #3C096C; /* Color de las etiquetas */
+    color: #3C096C;
     font-weight: bold;
 }
 
 .register-container .form-control {
-    border: 1px solid #C77DFF; /* Borde de los campos */
+    border: 1px solid #C77DFF;
     border-radius: 5px;
     box-shadow: none;
 }
 
 .register-container .form-control:focus {
-    border-color: #9D4EDD; /* Color del borde al enfocar */
+    border-color: #9D4EDD; 
     box-shadow: 0 0 5px #9D4EDD;
 }
 
 .register-container .btn-primary {
-    background-color: #4A00E0; /* Color del botón */
+    background-color: #4A00E0; 
     border: none;
     font-weight: bold;
 }
 
 .register-container .btn-primary:hover {
-    background-color: #7B2CBF; /* Color del botón al pasar el cursor */
+    background-color: #7B2CBF;
 }
 
 .register-container p {
@@ -518,13 +518,13 @@ body {
 }
 
 .register-container a {
-    color: #9D4EDD; /* Color del enlace */
+    color: #9D4EDD; 
     font-weight: bold;
     text-decoration: none;
 }
 
 .register-container a:hover {
-    color: #7B2CBF; /* Color del enlace al pasar el cursor */
+    color: #7B2CBF; 
     text-decoration: underline;
 }
 
