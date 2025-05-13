@@ -1,0 +1,35 @@
+@use '../abstracts/variables';
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: variables.$main-color;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+main {
+    min-height: 90vh;
+}

@@ -1,0 +1,172 @@
+@import '../abstracts/variables'; 
+
+ul {
+    list-style: none; 
+}
+
+.header {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 1rem 2rem;
+    background-color: $main-color; 
+    width: 100%; 
+    position: relative; 
+    z-index: 10;
+
+    .logo img {
+        width: 100px;
+    }
+}
+
+.banner h1 {
+    animation: jump 1.4s ease-in-out infinite; 
+    pointer-events: none; 
+}
+
+@keyframes jump {
+    0%, 100% {
+        transform: translateY(0); 
+    }
+    50% {
+        transform: translateY(-10px); 
+    }
+}
+    
+
+
+nav ul {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center; 
+    margin: 0 1rem; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: $blanco; 
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+        background-color: $negro;
+        color: rgb(0, 0, 0);
+        border-radius: 5px;
+    }
+}
+
+nav.navbar {
+    padding-top: 0.5rem; 
+    padding-bottom: 0.5rem; 
+    display: flex;
+    align-items: center; 
+    background-color: black;
+}
+    .form-inline {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        button {
+            padding: 0.5rem 1rem;
+            background-color: $link-color;
+            color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 5px;
+
+            &:hover {
+                background-color: $link-hover-color;
+            }
+        }
+    }
+
+    .login-link {
+        display: flex;
+        align-items: center; 
+        color: rgb(0, 0, 0);
+        font-weight: 500;
+        text-decoration: none;
+        padding: 0.5rem 1rem; 
+        border-left: 1px solid rgb(0, 0, 0);
+
+        &:hover {
+            color: $hover-color;
+        }
+
+        &::before {
+            content: "🔒";
+            font-size: 1rem;
+            margin-right: 0.5rem; 
+        }
+    }
+
+
+@media (max-width: 1200px) {
+
+    .nav-derecha {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .login {
+        position: fixed;
+        margin-right: 1rem;
+        transition: 1s;
+    }
+
+    .login:hover {
+        position: relative;
+        margin-left: 1rem;
+        transition: 1s;
+    }
+
+    .login-link {
+        margin-right: 0; 
+        transition: none; 
+    }
+}
+
+@media (max-width: 992px) {
+    .contenedor-nav {
+        flex-flow: column nowrap;
+        li {
+            padding: 0.5rem;
+        }
+    }
+
+    .nav-derecha {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .login {
+        position: fixed;
+        margin-right: 3rem;
+        transition: 1s;
+    }
+
+    .login:hover {
+        position: fixed;
+        margin-left: 4.5rem;
+        transition: 1s;
+    }
+
+    .login-link {
+        margin-right: 0; 
+        transition: none; 
+    }
+}

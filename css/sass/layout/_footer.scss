@@ -1,0 +1,35 @@
+@import '../abstracts/variables';
+
+.footer {
+    background-color: rgb(43, 41, 41) !important;
+}
+
+.footer h4 {
+    border-bottom: 2px solid #f8f9fa;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-link {
+    color: #f8f9fa;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: #7a17b8;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.icon {
+    color: #f3f3f3;
+    font-size: 1.4rem;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.icon:hover {
+    color: #d81cad;
+}
