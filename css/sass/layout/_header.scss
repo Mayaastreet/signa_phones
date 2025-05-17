@@ -5,9 +5,7 @@ ul {
 }
 
 .header {
-    justify-content: space-between;
     align-items: center;
-    display: flex;
     padding: 1rem 2rem;
     background-color: $main-color; 
     width: 100%; 
@@ -16,6 +14,12 @@ ul {
 
     .logo img {
         width: 100px;
+    }
+
+    .navbar-center-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
     }
 }
 
@@ -33,7 +37,14 @@ ul {
     }
 }
     
-
+.navbar-fixed {
+            top: 0;
+            width: 100%;
+            z-index: 1030; 
+        }
+        .navbar-toggler {
+            margin-left: auto; 
+        }
 
 nav ul {
     display: flex;
@@ -60,7 +71,7 @@ nav ul li a {
 
     &:hover {
         background-color: $negro;
-        color: rgb(0, 0, 0);
+        color: rgb(117, 54, 131);
         border-radius: 5px;
     }
 }
@@ -68,9 +79,8 @@ nav ul li a {
 nav.navbar {
     padding-top: 0.5rem; 
     padding-bottom: 0.5rem; 
-    display: flex;
-    align-items: center; 
-    background-color: black;
+    background-color: rgb(200, 186, 186);
+    width: 100%;
 }
     .form-inline {
         display: flex;
@@ -80,12 +90,12 @@ nav.navbar {
         button {
             padding: 0.5rem 1rem;
             background-color: $link-color;
-            color: rgb(0, 0, 0);
+            color: rgb(203, 43, 43);
             border: none;
             border-radius: 5px;
 
             &:hover {
-                background-color: $link-hover-color;
+                background-color: rgb(185, 41, 41);
             }
         }
     }
@@ -93,14 +103,20 @@ nav.navbar {
     .login-link {
         display: flex;
         align-items: center; 
-        color: rgb(0, 0, 0);
+        color: rgba(236, 230, 230, 0.826);
         font-weight: 500;
         text-decoration: none;
         padding: 0.5rem 1rem; 
-        border-left: 1px solid rgb(0, 0, 0);
+        border-left: 2px solid rgb(255, 255, 255);
+        //border-bottom:1px solid white;
 
         &:hover {
-            color: $hover-color;
+            color: white;
+            border-radius: 0%;
+            background-color: transparent;
+            border-left: 2px solid rgb(255, 255, 255);
+            
+            
         }
 
         &::before {
@@ -139,6 +155,30 @@ nav.navbar {
 }
 
 @media (max-width: 992px) {
+
+    .login-link {
+        display: flex;
+        align-items: center; 
+        color: rgba(249, 246, 246, 0.826);
+        font-weight: 500;
+        text-decoration: none;
+        padding: 0.5rem 1rem; 
+        border-left: 1px solid rgba(255, 255, 255, 0);
+        border-top:1px solid white;
+
+        &:hover {
+            color: white;
+            background-color: transparent;
+            border-radius: 0%;
+            border-left: 1px solid rgba(255, 255, 255, 0);
+        }
+
+        &::before {
+            content: "🔒";
+            font-size: 1rem;
+            margin-right: 0.5rem; 
+        }
+    }
     .contenedor-nav {
         flex-flow: column nowrap;
         li {
@@ -168,5 +208,28 @@ nav.navbar {
     .login-link {
         margin-right: 0; 
         transition: none; 
+    }
+}
+
+.footer-center-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    box-sizing: border-box;
+}
+
+footer .footer-center-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+@media (max-width: 1440px) {
+    .footer-center-container {
+        max-width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 }

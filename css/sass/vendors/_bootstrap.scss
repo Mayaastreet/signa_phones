@@ -7,14 +7,23 @@
 
 .navbar {
     background-color: variables.$main-color !important;
+    
 }
 
 .navbar-nav {
     justify-content: space-between;
+    flex-direction: column;
+    align-items: stretch;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 2;
+
+    background-color: transparent;
+    &:hover {
+        background-color: transparent;
+        border-radius: 0;
+        border-bottom:1px solid white;
+    }
 }
 
 .navbar-brand.active {

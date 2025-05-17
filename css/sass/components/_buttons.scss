@@ -2,14 +2,15 @@
 @import '../vendors/bootstrap';
 
 .btn {
-    padding: 0.5rem 1rem; 
-    color: rgb(58, 50, 50); 
+    padding: 0.8rem 1rem; 
+    color: rgb(255, 255, 255); 
     text-decoration: none;
     border-radius: 5px;
     border: none;
 
     &:hover {
-        background-color: var(--hover-color); 
+        background-color: rgb(131, 33, 153);
+        color: white;
     }
 }
 
