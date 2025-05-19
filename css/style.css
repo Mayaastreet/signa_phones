@@ -125,7 +125,7 @@ ul {
 .navbar-fixed {
   top: 0;
   width: 100%;
-  z-index: 1030;
+  z-index: 100;
 }
 
 .navbar-toggler {
@@ -285,6 +285,18 @@ nav.navbar {
   box-sizing: border-box;
 }
 
+/* Centrado de la navbar en pantallas grandes */
+.navbar-center-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
 footer .footer-center-container {
   display: flex;
   flex-direction: column;
@@ -292,12 +304,45 @@ footer .footer-center-container {
 }
 
 @media (max-width: 1440px) {
+  .navbar-center-container,
   .footer-center-container {
     max-width: 100%;
     padding-left: 16px;
     padding-right: 16px;
   }
+  .nav .navbar{
+    padding-left: 24px;
+    padding-right: 24px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+  }
 }
+
+/* Centrado global para resoluciones 4K y superiores */
+@media (min-width: 2000px) {
+  .navbar-center-container,
+  .footer-center-container,
+  .main,
+  .container,
+  .login-container,
+  .banner,
+  .promociones .grid,
+  .accesorios.container,
+  .nuevos-productos.container {
+    max-width: 1440px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box;
+  }
+  nav.navbar {
+    justify-content: center !important;
+    display: flex !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
 /* COMPONENTES */
 #navbarSupportedContent {
   justify-content: space-between;
